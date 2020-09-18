@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#72C5EA"
+        android:ellipsize="end"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:maxLines="1"
+        android:padding="6dp"
+        android:textColor="#3D403D"
+        android:textSize="18sp"
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#673AB7"
+        app:strokeWidth="2dp"
+        tools:text="message" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

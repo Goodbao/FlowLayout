@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 子view水平间距 -->
+    <attr name="child_horizontal_space" format="dimension" />
+    <!-- 子view垂直间距 -->
+    <attr name="child_vertical_space" format="dimension" />
+
+    <declare-styleable name="FlowLayout">
+        <!-- 子view水平间距 -->
+        <attr name="child_horizontal_space" />
+        <!-- 子view垂直间距 -->
+        <attr name="child_vertical_space" />
+    </declare-styleable>
+</resources>
