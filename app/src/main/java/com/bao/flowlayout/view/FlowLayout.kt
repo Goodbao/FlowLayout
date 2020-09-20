@@ -113,7 +113,7 @@ class FlowLayout : ViewGroup {
     }
 
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
-        clearMeasureParams();
+        clearMeasureParams()
 
         //父布局的宽高
         var viewGroupWidth = MeasureSpec.getSize(widthMeasureSpec)
@@ -190,7 +190,9 @@ class FlowLayout : ViewGroup {
         val widthMode = MeasureSpec.getMode(widthMeasureSpec)
         val heightMode = MeasureSpec.getMode(heightMeasureSpec)
 
-        //真正需要的宽高
+        //真正需要的宽高，
+        //如果ViewGroup的测量模式是 MeasureSpec.EXACTLY ，就用自己确定的大小，否则用子view测量大小
+        //需要加水padding，才是真正需要的大小
         val realWidth =
             if (widthMode == MeasureSpec.EXACTLY)
                 viewGroupWidth
